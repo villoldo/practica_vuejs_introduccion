@@ -18,62 +18,74 @@
           </div>
     
         <div id="app">
-            <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <dl>
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                    </dl>
-                  </div>
-                </div>
-                <div class="card"> 
-                  <div class="card-body">
-                    <dl>
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-                        
-                    </dl>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <dl>
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-
-                        <dt></dt>
-                        <dl></dl>
-                        
-                    </dl>
-                  </div>
-                </div>
-              </div>
+            
+     <div class="container" >
+      <div class="card-group">
+       <div class="card">
+         <div class="card-body">
+           <dl>
+                 <dt>{{col.collection.items[0].data[0].prompt}}</dt>
+                 <dd>{{col.collection.items[0].data[0].value}}</dd>
+ 
+                 <dt>{{col.collection.items[0].data[1].prompt}}</dt>
+                 <dd>{{col.collection.items[0].data[1].value}}</dd>
+ 
+                 <dt>{{col.collection.items[0].data[2].prompt}}</dt>
+                 <dd>{{col.collection.items[0].data[2].value}}</dd>
+ 
+                 <dt>{{col.collection.items[0].data[3].prompt}}</dt>
+                 <dd>{{col.collection.items[0].data[3].value}}</dd>
+ 
+                 <button @click="link1"> Ver</button>
+                 
+ 
+             </dl>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card-body">
+           <dl>
+                     <dt>{{col.collection.items[1].data[0].prompt}}</dt>
+                     <dd>{{col.collection.items[1].data[0].value}}</dd>
+ 
+                     <dt>{{col.collection.items[1].data[1].prompt}}</dt>
+                     <dd>{{col.collection.items[1].data[1].value}}</dd>
+ 
+                     <dt>{{col.collection.items[1].data[2].prompt}}</dt>
+                     <dd>{{col.collection.items[1].data[2].value}}</dd>
+ 
+                     <dt>{{col.collection.items[1].data[3].prompt}}</dt>
+                     <dd>{{col.collection.items[1].data[3].value}}</dd>
+ 
+                     <button @click="link2"> Ver</button>
+ 
+ 
+                 </dl>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card-body">
+            <dl>
+                         <dt>{{col.collection.items[2].data[0].prompt}}</dt>
+                         <dd>{{col.collection.items[2].data[0].value}}</dd>
+ 
+                         <dt>{{col.collection.items[2].data[1].prompt}}</dt>
+                         <dd>{{col.collection.items[2].data[1].value}}</dd>
+ 
+                         <dt>{{col.collection.items[2].data[2].prompt}}</dt>
+                         <dd>{{col.collection.items[2].data[2].value}}</dd>
+ 
+                         <dt>{{col.collection.items[2].data[3].prompt}}</dt>
+                         <dd>{{col.collection.items[2].data[3].value}}</dd>
+ 
+                         <button @click="link3" > Ver</button>
+ 
+ 
+                     </dl>
+         </div>
+       </div>
+     </div>
+     </div> 
 
         </div>
      

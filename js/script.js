@@ -43,6 +43,9 @@ var server_data = {
 var app = new Vue({
   el: '#app',
   data: {
-    col: server_data
+    col: server_data,
+    link1: server_data.collection.items[0].href,
+    link2: server_data.collection.items[1].href,
+    link3: server_data.collection.items[2].href
   }
 });
