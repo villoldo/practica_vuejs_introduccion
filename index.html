@@ -24,64 +24,37 @@
             <div class="card">
               <div class="card-body">
                 <dl>
-                      <dt>{{col.collection.items[0].data[0].prompt}}</dt>
-                      <dd>{{col.collection.items[0].data[0].value}}</dd>
-      
-                      <dt>{{col.collection.items[0].data[1].prompt}}</dt>
-                      <dd>{{col.collection.items[0].data[1].value}}</dd>
-      
-                      <dt>{{col.collection.items[0].data[2].prompt}}</dt>
-                      <dd>{{col.collection.items[0].data[2].value}}</dd>
-      
-                      <dt>{{col.collection.items[0].data[3].prompt}}</dt>
-                      <dd>{{col.collection.items[0].data[3].value}}</dd>
-      
-                      <a class="btn btn-primary" v-bind:href="link1" role="button">Ver</a>
-                      <a class="btn btn-secondary" v-bind:href="link1" role="button">Editar</a>
-                      
-      
-                  </dl>
+                  <div v-for="d in data1">                   
+                      <dt>{{d.prompt}}</dt>
+                      <dd>{{d.value}}</dd> 
+                  </div>
+                </dl>      
+                <a class="btn btn-primary" v-bind:href="link1" role="button">Ver</a>
+                <button class="btn btn-secondary" v-on:click="toggleEditFormVisibility" >Editar</button> 
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <dl>
-                          <dt>{{col.collection.items[1].data[0].prompt}}</dt>
-                          <dd>{{col.collection.items[1].data[0].value}}</dd>
-      
-                          <dt>{{col.collection.items[1].data[1].prompt}}</dt>
-                          <dd>{{col.collection.items[1].data[1].value}}</dd>
-      
-                          <dt>{{col.collection.items[1].data[2].prompt}}</dt>
-                          <dd>{{col.collection.items[1].data[2].value}}</dd>
-      
-                          <dt>{{col.collection.items[1].data[3].prompt}}</dt>
-                          <dd>{{col.collection.items[1].data[3].value}}</dd>
-      
-                          <a class="btn btn-primary" v-bind:href="link2" role="button">Ver</a>
-                          <a class="btn btn-secondary" v-bind:href="link1" role="button">Editar</a>
-      
-                      </dl>
+                  <div v-for="d in data2">                   
+                    <dt>{{d.prompt}}</dt>
+                    <dd>{{d.value}}</dd> 
+                  </div>
+                </dl>
+                <a class="btn btn-primary" v-bind:href="link2" role="button">Ver</a>
+                <button class="btn btn-secondary" v-on:click="toggleEditFormVisibility" >Editar</button>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
-                  <dl>
-                              <dt>{{col.collection.items[2].data[0].prompt}}</dt>
-                              <dd>{{col.collection.items[2].data[0].value}}</dd>
-      
-                              <dt>{{col.collection.items[2].data[1].prompt}}</dt>
-                              <dd>{{col.collection.items[2].data[1].value}}</dd>
-      
-                              <dt>{{col.collection.items[2].data[2].prompt}}</dt>
-                              <dd>{{col.collection.items[2].data[2].value}}</dd>
-      
-                              <dt>{{col.collection.items[2].data[3].prompt}}</dt>
-                              <dd>{{col.collection.items[2].data[3].value}}</dd>
-      
-                              <a class="btn btn-primary" v-bind:href="link3" role="button">Ver</a>
-                              <a class="btn btn-secondary" v-bind:href="link1" role="button">Editar</a>
-                          </dl>
+                <dl>
+                  <div v-for="d in data2">                   
+                    <dt>{{d.prompt}}</dt>
+                    <dd>{{d.value}}</dd> 
+                  </div>
+                </dl>
+                <a class="btn btn-primary" v-bind:href="link3" role="button">Ver</a>
+                <button class="btn btn-secondary" v-on:click="toggleEditFormVisibility" >Editar</button>
               </div>
             </div>
           </div>
